@@ -1,0 +1,36 @@
+:root{--primary:#3730a3;--primary-d:#2b2680;--accent:#f59e0b;--ink:#1c2033;--bg:#f6f7fb}
+body{background:var(--bg);color:var(--ink);font-family:'Segoe UI',system-ui,-apple-system,Roboto,sans-serif}
+a{text-decoration:none}
+.btn-primary{--bs-btn-bg:var(--primary);--bs-btn-border-color:var(--primary);--bs-btn-hover-bg:var(--primary-d);--bs-btn-hover-border-color:var(--primary-d);--bs-btn-disabled-bg:var(--primary);--bs-btn-disabled-border-color:var(--primary)}
+.btn-outline-primary{--bs-btn-color:var(--primary);--bs-btn-border-color:var(--primary);--bs-btn-hover-bg:var(--primary);--bs-btn-hover-border-color:var(--primary)}
+.text-primary,.spinner-border.text-primary{color:var(--primary)!important}
+.ss-nav{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 1px 8px rgba(20,24,60,.08);padding:.7rem 0}
+.ss-logo{font-weight:800;font-size:1.5rem;color:var(--ink);letter-spacing:-.5px}.ss-logo span{color:var(--primary)}.ss-logo.light{color:#fff}.ss-logo.light span{color:var(--accent)}
+.ss-burger{border:1px solid #ccd;background:#fff;border-radius:8px;font-size:1.3rem;padding:.1rem .6rem}
+.ss-menu{display:none;width:100%;flex-direction:column;gap:.75rem;padding:.75rem 0}.ss-menu.open{display:flex}
+.ss-links,.ss-actions{display:flex;gap:1.1rem;align-items:center;flex-wrap:wrap}
+.ss-links a,.ss-actions a{color:var(--ink);font-weight:500}.ss-links a:hover,.ss-links a.active{color:var(--primary)}
+.ss-badge{background:var(--accent);color:#000;border-radius:10px;font-size:.7rem;padding:1px 6px;margin-left:4px}
+@media(min-width:992px){.ss-menu{display:flex;flex-direction:row;align-items:center;width:auto;flex:1;padding:0;gap:1.5rem}.ss-search{flex:1;max-width:380px}.ss-actions{margin-left:auto}}
+.ss-hero{background:linear-gradient(120deg,#2b2680,#4f46e5 60%,#7c3aed);color:#fff;padding:5rem 0}
+.ss-hero h1{font-weight:800;font-size:clamp(2rem,5vw,3.4rem)}.ss-hero p{font-size:1.2rem;max-width:560px;opacity:.9;margin:1rem 0 1.8rem}
+.ss-h{font-weight:700;margin-bottom:1.2rem}
+.ss-cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem}
+.ss-cat{background:#fff;border-radius:14px;padding:1.2rem;text-align:center;color:var(--ink);font-weight:600;box-shadow:0 2px 10px rgba(20,24,60,.06);transition:.2s}
+.ss-cat span{display:block;font-size:2rem}.ss-cat:hover{transform:translateY(-3px);color:var(--primary)}
+.ss-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px rgba(20,24,60,.07);transition:.2s;display:flex;flex-direction:column}
+.ss-card:hover{box-shadow:0 8px 24px rgba(20,24,60,.14);transform:translateY(-3px)}
+.ss-card-link{color:inherit;flex-grow:1}.ss-card img{width:100%;aspect-ratio:1;object-fit:cover}
+.ss-price{font-weight:700;color:var(--primary)}
+.ss-detail-img{width:100%;border-radius:16px;box-shadow:0 4px 18px rgba(20,24,60,.12)}
+.ss-panel{background:#fff;border-radius:14px;padding:1.5rem;box-shadow:0 2px 10px rgba(20,24,60,.07)}
+.ss-empty{background:#fff;border:2px dashed #cfd3e6;border-radius:14px;padding:2rem;text-align:center;color:#667}
+.ss-cart-item,.ss-pg{display:flex;gap:1rem;background:#fff;border-radius:14px;padding:1rem;margin-bottom:1rem;box-shadow:0 2px 10px rgba(20,24,60,.06)}
+.ss-cart-item img,.ss-pg img{width:84px;height:84px;object-fit:cover;border-radius:10px}
+.ss-pg.drop{border:2px solid #16a34a;background:#f0fdf4}.ss-drop{color:#15803d;font-weight:700;margin-top:.3rem}
+.ss-modal-bg{position:fixed;inset:0;background:rgba(15,18,40,.55);display:flex;align-items:center;justify-content:center;z-index:200;padding:1rem}
+.ss-modal{background:#fff;border-radius:18px;padding:1.6rem;width:100%;max-width:420px;box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.ss-reason{background:#eef2ff;border-radius:10px;padding:.7rem 1rem;margin-top:.6rem;font-weight:500;color:var(--primary-d)}
+.ss-toasts{position:fixed;right:1rem;bottom:1rem;z-index:300;display:flex;flex-direction:column;gap:.5rem}
+.ss-toast{background:#16a34a;color:#fff;padding:.7rem 1.1rem;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,.2)}.ss-toast.error{background:#dc2626}
+.ss-footer{background:#1c2033;color:#fff;padding:2rem 0;margin-top:3rem}.ss-footer a{color:#fff;opacity:.8}
